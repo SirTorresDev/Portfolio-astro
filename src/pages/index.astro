@@ -1,0 +1,92 @@
+---
+import Badge from '../components/Badge.astro';
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import SocialPill from "../components/SocialPill.astro"
+import GitHubIcon from "../components/icons/GitHub.astro"
+import MailIcon from "../components/icons/Mail.astro"
+import Experience from "../components/Experience.astro"
+import Briefcase from "../components/icons/Briefcase.astro"
+import CodeIcon from "../components/icons/Code.astro"
+import Projects from "../components/Projects.astro"
+
+---
+
+<Layout
+  title="Porfolio de SirTorresDev - Desarrollador y Programador Web con 3 años de experiencia"
+  description="Contrata a SirTorresDev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="data:image/jpeg;base64,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"
+        alt="midudev photo"
+      />
+      <h1
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, soy SirTorresDev <a
+          href="https://linkedin.com/in/roberto-torres-prensa"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+      >
+        <span>+3 años de experiencia.</span><span
+          class="text-yellow-800 dark:text-yellow-200"
+        >
+          Desarrollador Web y Creador de Contenido</span
+        >
+         .<span class="text-red-800 dark:text-red-200">
+          De Madrid, España</span
+        >.
+        <span class="text-sky-800 dark:text-sky-200"
+          >Especializado en crear aplicaciones únicas.</span
+        >
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://linkedin.com/in/roberto-torres-prensa">
+          <LinkedInIcon class="size-4 md:size-6" />
+           LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/sirtorresdev">
+          <GitHubIcon class="size-4 md:size-6" />
+           GitHub
+        </SocialPill>
+        <SocialPill href="mailto:robertotorrespren@outlook.com">
+          <MailIcon class="size-4 md:size-6" />
+		  robertotorrespren@outlook.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Briefcase class="size-7" />
+         Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <CodeIcon class="size-7" />
+         Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
+
